@@ -6,7 +6,8 @@ input_file = sys.argv[1]
 output_dir = sys.argv[2]
 num_tests = int(sys.argv[3])
 
-if !os.path.isdir(output_dir): os.mkdir(output_dir)
+if os.path.isdir(output_dir) == False: 
+    os.mkdir(output_dir)
 
 data = np.load(input_file)
 
